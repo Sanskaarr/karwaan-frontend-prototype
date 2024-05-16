@@ -1,0 +1,85 @@
+.about{
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+}
+.aboutKarwaan{
+    padding: 0 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+
+}
+.aboutKarwaanText{
+    font-weight: bolder;
+    font-size: calc(1.375rem + 1.5vw);
+    color: black;
+
+}
+.founderImage{
+    width: 100%;
+}
+.aboutKarwaan p{
+   font-weight: normal; 
+   color: black;
+   text-align: center !important;
+   max-width: 80%;
+}
+/* --------in media-------- */
+.media{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* --------our Work-------- */
+.ourWork{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+.ourWork p:hover{
+    cursor: pointer;
+}
+.ourWorkImages{
+    width: 100%;
+    display: flex;
+}
+.ourWorkFirstImage ,
+.ourWorkSecondImage {
+    position: relative;
+    width: 50%;
+}
+.ourWorkFirstImage img ,
+.ourWorkSecondImage img {
+    width: 100%;
+    object-fit: cover;
+}
+.ourWorkFirstImage p,
+.ourWorkSecondImage p{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 40px;
+    color: white;
+}
+@media (max-width:1000px) {
+   .aboutKarwaan{
+    padding: 0 10px;
+   }
+    .ourWorkImages{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .ourWorkFirstImage ,
+    .ourWorkSecondImage {
+        position: relative;
+        width: 100%;
+    }
+    
+}

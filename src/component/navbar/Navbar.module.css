@@ -1,0 +1,261 @@
+.navbar {
+  padding: 0px 20px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 99;
+  height: 67px;
+  /* background: #000; */
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.navbar {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.contact {
+  color: white;
+  font-size: 20px;
+  /* padding-bottom: 1.2rem; */
+  /* margin-top: 10px; */
+}
+.rightNav {
+  display: flex;
+  align-items: center;
+}
+.logoDiv {
+  height: 67px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+.logoDiv:hover,
+.logoImage:hover{
+  cursor: pointer;
+}
+.hover:hover {
+  cursor: pointer;
+}
+.logoImage {
+  height: 70px!important;
+  /* margin-top: -13px; */
+}
+.capitalize {
+  text-transform: capitalize;
+}
+.closeMenu {
+  font-size: 20px;
+  top: 20px;
+  /* padding-bottom: 1.2rem !important; */
+  color: white;
+  display: flex;
+}
+.menuIcon {
+  font-size: 28px !important;
+  margin-left: 4px;
+}
+.openMenu {
+  display: flex;
+  align-items: center;
+}
+.menuOptions {
+  font-size: 20px;
+  background: rgba(0,0,0,0.8);
+  position: absolute;
+  transition: all ease-in 0.5s;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100svh;
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px 60px 0 0;
+ }
+.menuOptions li{
+  height: fit-content;
+ }
+ .crossIcon{
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 28px;
+  transform: translate(-20px,20px);
+ }
+.menuOptions li {
+  list-style: none;
+}
+.menuOptions li:nth-child(2n + 1):hover {
+  color: rgba(230, 230, 230, 0.75) !important;
+}
+.menuOptions li:nth-last-child(1) {
+  display: none;
+}
+.menuOptions li:hover {
+  cursor: pointer;
+}
+.forwardSlash {
+  color: #818181;
+  margin: 0 5px;
+}
+.crossIcon {
+  color: #818181;
+  margin-left: 10px;
+}
+.crossIcon:hover {
+  color: white;
+}
+.user {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  margin-left: 10px;
+  text-transform: uppercase;
+  color: white;
+
+}
+.userLogo {
+  font-size: 28px !important;
+  /* color: white !important; */
+}
+.user:hover {
+  cursor: pointer;
+}
+.userSetting {
+  position: absolute;
+  top: 0px;
+  right: 0%;
+  width: 300px;
+  height: 100%;
+  background: #000;
+  z-index: 99;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.userSettingCross {
+  color: white !important;
+  font-size: 28px !important;
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+  padding-right: 20px;
+  width: 100%;
+  justify-content: flex-end;
+  
+}
+.userSettingClose {
+  width: 50px;
+}
+.userSettingCross:hover {
+  cursor: pointer;
+}
+.userSettingCross span {
+  color: white !important;
+  font-size: 20px !important;
+  display: none;
+}
+
+.userSettingOptions {
+  color:white;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.userSettingOptions li {
+  margin: 20px 0;
+  border-bottom: 1px solid black;
+  transition: all ease-in 0.5s;
+  color: #818181;
+}
+.userSettingOptions li:hover {
+  cursor: pointer;
+  border-bottom: 1px solid white;
+  transition: all ease-in 0.5s;
+  color: white;
+}
+/* shop navbar */
+.shopNav{
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  font-size: 16px;
+  font-weight:  bolder !important;
+}
+.shopNav li{
+margin-left: 10px;
+font-weight: bolder !important;
+color: black;
+}
+.shopNav li:hover{
+cursor: pointer;
+}
+@media (max-width: 1000px) {
+ .menuOptions{
+  font-size: 24px;
+  background: rgba(0,0,0,0.8);
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100svh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 15svh;
+  padding-right: 0;
+ }
+ .menuOptions li:nth-child(2n){
+  display: none;
+ }
+ .crossIcon{
+  position: absolute;
+  right: 20px;
+  /* right: 110px; */
+  top: 25px;
+  color: white!important;
+ }
+}
+@media (max-width: 812px) {
+  .menu {
+    display: none;
+  }
+  .menuOptions{
+    background: rgba(0,0,0,1);
+  }
+}
+@media (max-width: 550px) {
+  .userSetting {
+    width: 100%;
+  }
+}
+@media (max-width: 430px) {
+  .navbar{
+    padding: 0 20px 0 0;
+  }
+  }
+@media (max-width: 320px) {
+  .navbar{
+    padding: 0 10px 0 0;
+  }
+  .logoImage{
+    width: 150px;
+    height: 70px;
+  }
+  .user{
+    font-size: 16px;
+  }
+  .userLogo,.menuIcon{
+    font-size: 22px!important;
+  }
+}

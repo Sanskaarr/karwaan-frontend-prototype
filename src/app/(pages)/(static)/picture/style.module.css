@@ -1,0 +1,254 @@
+.filterContainer{
+  margin-right: 20px;
+  margin-left: 20px;
+}
+.Picture {
+  background: white;
+  overflow: hidden;
+}
+.Picture::-webkit-scrollbar {
+  display: none;
+}
+.Picture {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+.PictureGallary{
+  scroll-behavior: smooth;
+  transition: scroll 1s ease-in-out; /* Adjust the transition duration and easing as needed */
+}
+.PictureSection {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.PictureSectionHome {
+  /* padding-bottom: 20px; */
+  border-right: 2px solid black;
+  height: 530px;
+  display: flex;
+  align-items: center;
+}
+.PictureSectionHome > span {
+  transform: rotate(-90deg);
+  display: flex;
+  color: blue;
+}
+.PictureSectionHome > span:hover {
+  cursor: pointer;
+}
+.PictureSectionHome > hr {
+  width: 500%;
+}
+.desktopViewFilter {
+  color: black;
+  display: block;
+  margin: 0 10px;
+}
+.mobileViewFilter {
+  display: none;
+}
+.mobileViewFilter{
+  position: relative;
+  z-index: 9;
+  background: white;
+}
+
+.PictureSectionFilter > ul {
+  margin:0 10px;
+  visibility: visible !important;
+  /* transform: translate(0, 0) !important; */
+  transition: ease-in 0.5s !important;
+  pointer-events: all !important;
+}
+.PictureSectionFilter > ul > li {
+  list-style: none;
+  text-transform: lowercase;
+  color: #8d8e8e;
+  font-size: 20px;
+}
+.PictureSectionFilter > ul > li:hover {
+  text-decoration: line-through;
+  cursor: pointer;
+}
+.PictureGallary {
+  width: 100vw;
+  height: 530px;
+  transform: translateX(260px);
+  opacity: 1;
+  display: flex;
+  flex-flow: column wrap;
+  align-content: flex-start;
+  overflow: scroll;
+  margin-left: -265px;
+  transition: all 0.5s ease-in-out;
+  position: relative;
+}
+
+
+.PictureGallary::-webkit-scrollbar {
+  display: none;
+}
+
+.imageSection:last-child{
+  margin-right: 60px;
+}
+.imageSection {
+  width: 295px;
+  height: 169px;
+  position: relative;
+  margin: 2px;
+}
+.imageSection:hover {
+  cursor: pointer;
+}
+.imageSection:hover > .gallaryImageText {
+  transform: translate(-50%, -50%);
+  transition: ease-in 0.5s;
+  visibility: visible;
+  font-size: 16px;
+}
+.imageSection:hover > .gallaryImage {
+  transition: ease-in 0.5s;
+  filter: blur(1px);
+}
+.gallaryImage {
+  width: 295px;
+  height: 169px;
+}
+.gallaryImageText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  color: white;
+  transition: ease-in 0.5s;
+  font-size: 16px;
+  visibility: hidden;
+}
+
+/* scroll bar */
+.PictureScrollBar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  /* padding: 0 30px; */
+  padding-right: 2rem;
+  padding-left: 2rem;
+  background: white;
+  color: black;
+  margin-top: 1rem; /* temp */
+}
+.PictureScrollBarRightSide {
+  display: flex;
+  align-items: center;
+}
+.PictureScrollBarLeft,
+.pictureMenuShow,
+.pictureMenuHide,
+.PictureScrollBarRight {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.PictureScrollBarRight {
+  margin-left: 15px;
+}
+.pictureIcons {
+  margin: 0 5px;
+}
+.PictureScrollBarRight,
+.PictureScrollBarLeft,
+.pictureMenuShow:hover,
+.pictureMenuHide:hover {
+  cursor: pointer;
+}
+.mobileList{
+  display: none;
+}
+.desktopList{
+  display: block;
+}
+@media (max-width: 1028px) {
+  .desktopList{
+    display: none;
+  }
+  .mobileList{
+    display: block;
+  }
+  .ClipLoader{
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+  }
+  .PictureSection {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    justify-content: flex-start;
+    flex-direction: row;
+  }
+  .PictureSectionFilter {
+    visibility: visible !important;
+    pointer-events: all !important;
+    position: relative;
+    width: 100vw !important;
+  }
+
+  .desktopViewFilter {
+    display: none;
+  }
+  .mobileViewFilter {
+    display: block;
+    color: black;
+    margin-bottom: 5px;
+  }
+  .PictureSectionFilter h3 {
+    border-bottom: 1px solid black;
+    text-align: center;
+  }
+  .PictureSectionFilter h3:hover {
+    cursor: pointer;
+  }
+  .PictureSectionFilter ul {
+    text-align: center;
+    position: absolute;
+    left: 0;
+    top: 30px;
+    background: white;
+    z-index: 3;
+    width: 100vw;
+    /* transform: translate(0,50) !important; */
+  }
+  
+  .PictureScrollBar,
+  .PictureSectionHome {
+    display: none;
+  }
+  
+  .PictureGallary {
+    position: relative;
+    z-index: 0;
+    width: 100%;
+    height: 75svh;
+    margin: auto;
+    padding: auto;
+    padding-right: 20px;
+    transform: translateX(0);
+    flex-flow: row wrap;
+    align-content: flex-start;
+    /* align-content: center; */
+    justify-content: center;
+  }
+}
+@media (max-width:350px) {
+    .imageSection{
+        width: 100% !important;
+        padding: 0 10%;
+    } 
+    .gallaryImage{
+        width: 100%;
+    } 
+
+}

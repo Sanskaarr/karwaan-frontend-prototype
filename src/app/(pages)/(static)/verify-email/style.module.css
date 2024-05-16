@@ -1,0 +1,14 @@
+.verifyEmail{
+    padding-top: 67PX;
+    height: 80svh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.verifyEmail h1{
+    color: black;
+}
+.verifyEmailSpinner{
+    display: block;
+}

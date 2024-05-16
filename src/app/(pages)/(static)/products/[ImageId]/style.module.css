@@ -1,0 +1,211 @@
+.singleProductPage{
+    background: white;
+}
+.singleProductPageSlider{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding:0 10px;
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+.singleProductPageSliderButton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #000;
+    border-radius: 50%;
+   width: 50px;
+   height: 50px;
+}
+.singleProductPageSliderButton:hover{
+    cursor: pointer;
+}
+.icons{
+    background: #ffffff!important;
+    border-radius: 50%;
+   width: 40px;
+   height: 40px;
+}
+.singleProductPageUpperSection{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.singleProductPageUpperLeftSection,
+.singleProductPageUpperRightSection{
+    padding: 0 10px;
+    width: 50%;
+}
+.singleProductPageUpperRightSection{
+    display: grid;
+}
+
+.singleProductPageUpperLeftSection img{
+    width: 100%;
+    max-height: 500px;
+    border-radius: 5px;
+
+}
+.singleProductPageUpperRightSection h3{
+    margin-top: 0;
+    margin-bottom: .5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    font-size: calc(1.3rem + .6vw);
+    color: #000;
+    display: flex;
+    align-items: center;
+    height: fit-content;
+}
+.singleProductPageUpperRightSection p{
+    font-size: 16px;
+    color: #465b52;
+    margin: 15px 0 20px 0;
+    height: fit-content;
+
+}
+.read{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #fff; */
+    /* border-style: solid; */
+    /* border-radius: 50px; */
+    color: #000;
+    /* border: 1px solid black; */
+    font-weight: 700;
+    font-size: 15px;
+    margin-right: 5px;
+    max-width: 150px;
+    /* margin: auto; */
+    border-radius: 5px;
+  
+}
+.read:hover{
+   cursor: pointer;
+   box-shadow: 6px 8px 12px rgba(0, 0, 0, 0.1);
+   transition: box-shadow 0.3s ease-in-out;
+}
+.singleProductPageUpperRightSection>select{
+    width: 80%;
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    max-width: 300px;
+}
+.singleProductPageUpperRightSection>select:hover{
+cursor: pointer;
+}
+.singleProductPageUpperRightSection>select>option:hover,
+.singleProductPageUpperRightSection>select>option:checked{
+background-color: gray !important;
+cursor: pointer;
+}
+
+.buttons{
+    padding: 12px 0;
+    align-self: flex-end;
+
+}
+.button{
+    background-color: #fff;
+    border-style: solid;
+    /* border-radius: 50px; */
+    color: #000;
+    border: 2;
+    padding: 12px 16px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 15px;
+    margin-right:5px;
+    border-radius: 5px;
+}
+
+.button:hover{
+    box-shadow: 6px 8px 12px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+
+}
+.shopProductsHeading{
+    text-align: center;
+    font-size: 16px;
+    color: #465b52;
+    margin: 15px 0 20px 0;
+}
+.shopProducts{
+    padding:0 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.oneProduct{
+    width: 30%;
+    min-width: 300px;
+    padding: 10px 12px;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    margin: 15px 0;
+    transition: 0.2s ease;
+    position: relative;
+  
+}
+.oneProduct>.image{
+    max-height: 176px;
+    width: 100%;
+     overflow: hidden;
+    border-radius: 5px;
+
+}
+.image{
+    width: 100% !important;
+    object-fit: cover !important;
+}
+.image:hover {
+    opacity: 0.5;
+    filter: grayscale(5px);
+}
+.imagesCategory{
+    color: #606063;
+    font-size: 12px;
+}
+.imagesName{
+    padding-top: 7px;
+    color: #1a1a1a;
+    font-size: 14px;
+}
+@media (max-width:657px) {
+   .shopProducts{
+    display: flex;
+    justify-content: center;
+   } 
+   .singleProductPageUpperSection{
+    display: flex !important;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+   }
+   .singleProductPageUpperLeftSection,
+   .singleProductPageUpperRightSection{
+    width: 90%;
+   }
+   }
+
+@media (max-width:400px) {
+    .shopProducts{
+       padding: 0;
+       } 
+    .oneProduct{
+        width: 90%;
+        min-width: 250px;
+    }
+.sortedByOptions{
+    width: fit-content;
+    transform: translate(-40%,100%);
+}
+}

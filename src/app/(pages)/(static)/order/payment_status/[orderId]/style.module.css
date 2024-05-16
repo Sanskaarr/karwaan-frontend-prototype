@@ -1,0 +1,27 @@
+.payment_status{
+    min-height: 80vh;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.paymentStatusMessage{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+    max-width: 300px;
+}
+.paymentStatusImg{
+    object-fit: contain;
+    width: 80%;
+}
+@media (max-width:450px) {
+    
+    .message{
+        font-size: 12px !important;
+        max-width:350px !important;
+    }
+}

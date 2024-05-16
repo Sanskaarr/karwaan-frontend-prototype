@@ -1,0 +1,46 @@
+.clientPage{
+    background: white;
+    color: black;
+}
+.clients{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0 10%;
+}
+.oneCard{
+    height: 270px;
+    width: 25%;
+    padding: 0 2.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.clientPage>h3:hover,
+.companyLogo:hover,
+.companyName:hover{
+   cursor: pointer;
+}
+.blogCardImg{
+    height: 160px;
+}
+.companyLogo{
+    height: 100px;
+    display: block;
+    object-fit: contain;
+    aspect-ratio: 1.2/1;
+
+}
+@media (max-width:770px){
+    .oneCard{
+        height: 170px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    .blogCardImg{
+        height: 120px;
+    }
+}

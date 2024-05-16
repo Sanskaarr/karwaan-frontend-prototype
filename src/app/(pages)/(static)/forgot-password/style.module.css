@@ -1,0 +1,85 @@
+.VerifyMail{
+    background: white;
+    display: flex;
+    color: black;
+    justify-content: center;
+}
+  .contactForm {
+    width: 50%;
+    height: 80svh;
+    padding: 0% 5%;
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .contactForm h1 {
+    margin-bottom: 50px;
+  }
+  .userName,
+  .password,
+  .email {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+    position: relative;
+  }
+  .contactForm label {
+    /* font-weight: bolder; */
+    font-size: 16px;
+    padding-left: 5px;
+    position: absolute;
+    top: -15px;
+    transform: translateY(15px);
+    transition: all 0.4s;
+  }
+  .contactForm input {
+    border: 0px;
+    border-bottom: 1px solid black;
+    outline: 0;
+    text-underline-offset: 0px;
+    font-size: 14px;
+    padding: 5px 0 2px 5px;
+    margin-bottom: 24px;
+    background-color: white;
+    color: #000;
+  }
+  .inputField:focus ~ label,
+  .inputField:not(:focus):valid ~ label {
+    transform: translateY(-15px);
+    transition: all 0.4s;
+  }
+  .inputField{
+    background: transparent !important;
+    z-index: 3;
+    color: black;
+  }
+  .Signin {
+    background: #000;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    height: 30px;
+  }
+  .Signin:hover {
+    cursor: pointer;
+   }
+   .forgotPassword {
+    margin-top: 20px;
+  }
+  .forgotPassword:hover {
+    cursor: pointer;
+    color:gray;
+  }
+  @media (max-width:450px) {
+    .contactForm{
+        width: 100%;
+        padding: 0 10%;
+    }
+      
+    .contactForm h1{
+      text-align: center;
+    }
+      
+  }

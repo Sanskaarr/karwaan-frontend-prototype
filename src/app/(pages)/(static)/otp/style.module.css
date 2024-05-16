@@ -1,0 +1,42 @@
+.VerifyMail{
+    background: white;
+    display: flex;
+    color: black;
+    /* justify-content: center; */
+    flex-direction: column;
+    align-items: center;
+}
+  .contactForm {
+    width: 50%;
+    height: 80svh;
+    padding: 0% 5%;
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .VerifyMail h1 {
+    margin-bottom: 50px;
+  }
+  
+  .Signin {
+    background: #000;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    width:120px;
+    height: 40px;
+  }
+  
+  .Signin:hover {
+    cursor: pointer;
+   }
+   
+  @media (max-width:450px) {
+
+    .VerifyMail h1{
+      text-align: center;
+    }
+      
+  }

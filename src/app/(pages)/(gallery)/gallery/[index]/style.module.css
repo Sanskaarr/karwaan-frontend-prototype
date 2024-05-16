@@ -1,0 +1,48 @@
+.mainGallary{
+    height: 100svh;
+    width: 100vw;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.mainGallaryBackground{
+    width: 100vw;
+    width: 100vw;
+    height: 100svh;
+    /* background: red; */
+    position: absolute;
+    z-index: 0;
+
+}
+.imageSection{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+.mainGallaryImage{
+    width: 80vw;
+    max-height: 400px;
+    object-fit: contain;
+    /* transform: translate(0,0) !important; */
+
+}
+.nextArrows ,
+.prevArrows {
+    height: fit-content;
+   
+}
+.nextArrows >svg,
+.prevArrows >svg{
+    color: black !important;
+    height: fit-content;
+    width: 60px;
+    object-fit: contain;
+}
+.nextArrows:hover,
+.prevArrows:hover{
+    cursor: pointer;
+}

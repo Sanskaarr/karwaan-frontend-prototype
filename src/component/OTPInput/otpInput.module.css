@@ -1,0 +1,77 @@
+/** otpInputs.css **/
+
+.digitGroup {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.digitGroup input {
+  outline: 0 !important;
+  user-select: none !important;
+  width: 50px;
+  height: 50px;
+  background-color: #c5dbf5;
+  font-weight: bold !important;
+  border-radius: 5px;
+  border: none;
+  line-height: 50px;
+  text-align: center;
+  font-size: 24px;
+  color: #001e9a;
+  margin: 0;
+}
+.DigitInput::-webkit-scrollbar {
+  display: none;
+}
+.DigitInput::-webkit-inner-spin-button,
+.DigitInput::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.digitGroup input:focus {
+  border: 2px solid #001e9a !important;
+}
+
+.digitGroup input:active {
+  border: 2px solid #001e9a !important;
+}
+
+.digitGroup .splitter {
+  padding: 5px 0;
+  color: rgb(0, 0, 0);
+  font-size: 25px;
+  margin: 0;
+}
+
+.prompt {
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: white;
+}
+
+.formSection {
+  max-width: 500px;
+  margin: auto;
+  border-radius: 10px;
+  box-shadow: 0px 0px 8px #ddd;
+  padding: 20px;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 480px) {
+  .digitGroup {
+    gap: 5px !important;
+  }
+  .digitGroup input {
+    width: 40px !important;
+  }
+  .digitGroup .splitter {
+    font-size: 25px !important;
+  }
+}

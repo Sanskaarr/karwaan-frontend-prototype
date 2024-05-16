@@ -1,0 +1,139 @@
+.shop{
+   background: white;
+}
+.shopBanner{
+    width: 100%;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 14px;
+    position: relative;
+    font-size: 30px;
+    color: white;
+    aspect-ratio: 2/1;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url("https://karwaan.b-cdn.net/gallery/Uncategorized8.jpg")
+}
+.shopBanner p:hover{
+    cursor: pointer;
+}
+.shopProducts{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 0;
+}
+.shopProductfilters{
+    display: flex;
+    justify-content: center;
+}
+.shopProductSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0 0 0;
+}
+.shopProductOurPrints{
+    color: black;
+    font-size: 20px;
+}
+.shopProductfilter{
+    background-color: #fff;
+    /* border-radius: 50px; */
+    color: #000;
+    border: 0;
+    padding: 5px 10px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 15px;
+    position: relative;
+    margin: 5px;
+}
+.sortedByOptions,
+.filterByOptions{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 8px 0;
+    transform: translate(0,100%);
+    list-style: none;
+    z-index: 99;
+    border-radius: .25rem;
+    background: white;
+    box-shadow:0px 0px 4px 1px rgb(210, 210, 210);
+}
+.filterByOption,
+.sortedByOption{
+    padding: 4px 16px;
+    font-weight: normal;
+    white-space:noWrap;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+.filterByOption:hover,
+.sortedByOption:hover{
+    color: #1e2125;
+    background-color: #e9ecef;
+}
+.shopProductfilter:hover,
+.shopProductfilter:hover{
+    background-color: #e4dbdb;
+    color: #000;
+}
+.shopProducts{
+    padding:0px 80px 40px;
+}
+.oneProduct{
+    width: 30%;
+    min-width: 300px;
+    padding: 10px 12px;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    margin: 15px 0;
+    transition: 0.2s ease;
+    position: relative;
+    z-index: 2;
+}
+.image{
+    width: 100%;
+    height: 172px;
+    object-fit: cover;
+
+}
+.image:hover {
+    opacity: 0.5;
+    filter: grayscale(5px);
+}
+.imagesCategory{
+    color: #606063;
+    font-size: 12px;
+}
+.imagesName{
+    padding-top: 7px;
+    color: #1a1a1a;
+    font-size: 14px;
+}
+@media (max-width:775px) {
+   .shopProducts{
+    display: flex;
+    justify-content: center;
+   } 
+}
+@media (max-width:400px) {
+    .shopProducts{
+       padding: 0;
+       } 
+    .oneProduct{
+        width: 90%;
+        min-width: 250px;
+    }
+.sortedByOptions{
+    width: fit-content;
+    transform: translate(-40%,100%);
+}
+}
